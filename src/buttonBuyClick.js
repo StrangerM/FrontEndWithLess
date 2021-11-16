@@ -1,4 +1,4 @@
-var status = false;
+var firstPage = false;
 
 const clickToBuy = () =>
 {
@@ -16,4 +16,4 @@ function ChangeInnerText(params) {
     document.getElementById("clickBuy").innerHTML = "Added";
 }
 
-export default {clickToBuy, status};
+export default {clickToBuy};

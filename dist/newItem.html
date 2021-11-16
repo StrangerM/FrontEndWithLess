@@ -37,17 +37,17 @@
                 <form action="">
                     <fieldset class="container__item container__item--fieldset">
                        <legend>Add new Item</legend> 
-                       <p class="container__item container__item--para">Name <input type="text"></p>
-                       <p class="container__item container__item--para">Description <input type="text"></p>
+                       <p id="nameId" class="container__item container__item--para">Name <input type="text"></p>
+                       <p id="DescrId" class="container__item container__item--para">Description <input type="text"></p>
                        <label class="container__item container__item--para" for="cars">Choose Category:</label>
-                       <select class="container__item container__item--para" name="cars" id="cars">
+                       <select id="selectId" class="container__item container__item--para" name="cars">
                          <option value="Watches">Watches</option>
                          <option value="Mobile phones">Mobile phones</option>
                          <option value="Audio">Audio</option>
                          <option value="Game gadgets">Game gadgets</option>
                        </select>
-                       <p class="container__item container__item--para">Load picture <input type="file"></p>
-                       <button id="butAd">Upload Item</button>
+                       <p id="upload" class="container__item container__item--para">Load picture <input type="file"></p>
+                       <button type="submit" id="butAd" onclick="AddNew()">Upload Item</button>
                     </fieldset>
                 </form>
             </div>
