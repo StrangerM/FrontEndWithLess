@@ -1,0 +1,25 @@
+{
+  "name": "frontendwithless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack":"webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StrangerM/FrontEndWithLess.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StrangerM/FrontEndWithLess/issues"
+  },
+  "homepage": "https://github.com/StrangerM/FrontEndWithLess#readme",
+  "devDependencies": {
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}

@@ -4,7 +4,7 @@
             "name": "Launch Microsoft Edge and open the Edge DevTools",
             "request": "launch",
             "type": "vscode-edge-devtools.debug",
-            "url": "C:\\Users\\Yuriy\\Repos\\FrontEndWithLess\\html\\index.html" // Provide your project's url to finish configuring
+            "url": "C:\\Users\\iurii.plyska\\source\\repos\\Front\\FrontEndWithLess\\dist\\index.html" // Provide your project's url to finish configuring
         }
     ]
 }
