@@ -99,12 +99,12 @@
   margin: 10px 10px;
 }
 .container__item--para {
-  display: block;
+  display: inline-block;
   margin: 10px 10px;
   font-size: 12px;
 }
 .container__item--category {
-  display: block;
+  display: inline-block;
   margin: 10px 10px;
   font-size: 12px;
   font: bold;
@@ -123,7 +123,10 @@
   position: static;
 }
 .container__item--busketImage {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5px;
   border: #111;
   border-width: 2px;
   border-radius: 5px;
@@ -133,4 +136,11 @@
   left: 250px;
   margin-bottom: 10px;
   margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.container__item--goods {
+  display: flex;
+  background-color: #03caca;
+  left: 250px;
 }

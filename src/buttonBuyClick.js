@@ -6,11 +6,11 @@ const clickToBuy = () =>
 }
 
 function ChangeColor() {
-    document.getElementById("clickBuy").style.backgroundColor = "black";
+    document.getElementById(event.srcElement.id).style.backgroundColor = "black";
 }
 
 function ChangeInnerText(params) {
-    document.getElementById("clickBuy").innerHTML = "Added";
+    document.getElementById(event.srcElement.id).innerHTML = "Added";
 }
 
 export default {clickToBuy};

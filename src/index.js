@@ -17,10 +17,5 @@ const openNav = () => {
  window.clickToBuy = clickToBuy;
  window.objectItems = objectItems;
  window.ShowGoods = ShowGoods;
-
- //window.localStorage.setItem("objectItems", JSON.stringify(objectItems));
-
- //window.localStorage.removeItem("objectItems", JSON.stringify(objectItems))
- //window.localStorage.removeItem('itemsArray', JSON.stringify(window.objectItems));
  window.AddNew = AddNew;
  

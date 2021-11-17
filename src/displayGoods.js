@@ -1,12 +1,14 @@
 
-function Show(){
-
+document.addEventListener("DOMContentLoaded", function Show(){
     var goods =  JSON.parse(window.localStorage.getItem('objectItems'));
 
     if(goods == null)
     {
-        goods = window.localStorage.setItem("objectItems", JSON.stringify(window.objectItems));
-    }
+        window.localStorage.setItem("objectItems", JSON.stringify(window.objectItems));
+        goods =  JSON.parse(window.localStorage.getItem('objectItems'));
+    } 
+   
+
 
    
     for(let x = 0; x < goods.length; x++)
@@ -29,7 +31,7 @@ function Show(){
         document.getElementById('contentGood').appendChild(div);
     }
    
-}
+});
 
 const ShowGoods = () =>
 {
