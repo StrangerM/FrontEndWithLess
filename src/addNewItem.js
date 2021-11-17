@@ -1,27 +1,36 @@
-var oldItems = JSON.parse(window.localStorage.getItem('objectItems')) || [];
+
+function AddNewItem(){
+
+//window.localStorage.setItem("objectItems", JSON.stringify(window.objectItems));
+var oldItems = JSON.parse(window.localStorage.getItem('objectItems'));
+if(oldItems == null)
+{
+   oldItems = window.localStorage.setItem("objectItems", JSON.stringify(window.objectItems));
+}
 
 var item = new Object();
 
-function AddNew(){
-
-   item.name = document.querySelector("#nameId");
-   item.description = document.querySelector("#DescrId");
-   item.id = oldItems.length;
-   let temp = document.querySelector("#selectId");
+   item.name = document.getElementById("nameId").value;
     
-   if (temp == "Watches")
+   item.description = document.getElementById("DescrId").value;
+   item.id = oldItems.length;
+   var select = document.getElementById('selectId');
+   item.category = select.options[select.selectedIndex].value;
+   item.status = 0;
+    
+   if (item.category == "Watches")
    {
       item.category = 1
    }
-   if (temp == "Mobile phones")
+   if (item.category == "Mobile phones")
    {
       item.category = 2
    }
-   if (temp == "Audio")
+   if (item.category == "Audio")
    {
       item.category = 3
    }
-   if (temp == "Game gadgets")
+   if (item.category == "Game gadgets")
    {
       item.category = 4
    }
@@ -34,13 +43,25 @@ function AddNew(){
 
    }, false);
    
-   oldItems.push(item);
-   window.localStorage.setItem('itemsArray', JSON.stringify(oldItems));
+   oldItems.push(
+      {
+      category : item.category,
+      id : item.id, 
+      name: item.name, 
+      description: item.description, 
+      imageUrl : item.imageUrl, 
+      status: item.status
+      });
+   window.localStorage.removeItem("objectItems", JSON.stringify(oldItems))
+   
+   window.localStorage.setItem('objectItems', JSON.stringify(oldItems));
 }
  
-const addNewItem = () =>{
-   AddNew();
+const AddNew = () =>{
+
+   AddNewItem();
 }
-export default {addNewItem};
+
+export default {AddNew};
 
   

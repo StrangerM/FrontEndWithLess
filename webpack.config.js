@@ -6,6 +6,7 @@ module.exports = {
 
         static: './dist',
 
-    }
+    },
+    devtool: "source-map"
 
  };

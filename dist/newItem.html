@@ -23,7 +23,7 @@
 
             <div id="mySidenav" class="container__item container__item--sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="busket.html">All</a>
+                <a href="allGoods.html">All</a>
                 <a href="#">Watches</a>
                 <a href="#">Mobile phones</a>
                 <a href="#">Audio</a>
@@ -34,11 +34,11 @@
               <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
             <div class="container__item container__item--add">
-                <form action="">
+                <form>
                     <fieldset class="container__item container__item--fieldset">
                        <legend>Add new Item</legend> 
-                       <p id="nameId" class="container__item container__item--para">Name <input type="text"></p>
-                       <p id="DescrId" class="container__item container__item--para">Description <input type="text"></p>
+                       <p class="container__item container__item--para">Name <input id="nameId" type="text"></p>
+                       <p class="container__item container__item--para">Description <input id="DescrId"  type="text"></p>
                        <label class="container__item container__item--para" for="cars">Choose Category:</label>
                        <select id="selectId" class="container__item container__item--para" name="cars">
                          <option value="Watches">Watches</option>
@@ -46,7 +46,7 @@
                          <option value="Audio">Audio</option>
                          <option value="Game gadgets">Game gadgets</option>
                        </select>
-                       <p id="upload" class="container__item container__item--para">Load picture <input type="file"></p>
+                       <p class="container__item container__item--para">Load picture <input type="file" id="upload"></p>
                        <button type="submit" id="butAd" onclick="AddNew()">Upload Item</button>
                     </fieldset>
                 </form>

@@ -1,15 +1,12 @@
-var firstPage = false;
 
 const clickToBuy = () =>
 {
     ChangeColor();
     ChangeInnerText();
-    status = true;
-
 }
 
 function ChangeColor() {
-    document.getElementById("clickBuy").style.backgroundColor = "yellow";
+    document.getElementById("clickBuy").style.backgroundColor = "black";
 }
 
 function ChangeInnerText(params) {
