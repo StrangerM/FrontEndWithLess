@@ -37,12 +37,8 @@ var item = new Object();
 
    var file = document.getElementById("upload");
 
-   file.addEventListener("change", function () {
-      
-      item.imageUrl = file.files[0].name;
+   item.imageUrl = "../image/" + file.files[0].name;
 
-   }, false);
-   
    oldItems.push(
       {
       category : item.category,
